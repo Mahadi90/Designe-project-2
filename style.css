@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.header-parent{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.452),rgba(0, 0, 0, 0.384)),url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+#navigation{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+   
+}
+#navigation > ul{
+    display: flex;
+}
+#navigation > ul > li{
+    list-style: none;
+    margin: 0 10px;
+}
+#navigation > ul > li > a{
+     text-decoration: none;
+     color: white;
+     font-size: 16px;
+     transition: .5s;
+}
+
+#navigation > ul > li > a:hover{
+     color: rgb(245, 11, 11);
+}
+.hotline{
+    color: white;
+    font-size: 16px;
+}
+.hotline > i{
+    margin-right: 3px;
+    font-size: 16px;
+}
+.hotline > a{
+    text-decoration: none;
+    color: white;
+}
+/* main haeder start here now  */
+.main-header{
+ width: 1000px;
+ margin: auto;
+}
+.header-container{
+    text-align: center;
+    margin-top: 100px;
+}
+.header-container > h1{
+    color: white;
+    font-size: 72px;
+    margin: auto;
+    padding: 15px 10px;
+    border-radius: 25px;
+}
+.header-container > h3{
+    color: white;
+    letter-spacing: 1px;
+    margin: 20px auto;
+}
+.header-container > button{
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: rgb(255, 217, 0);
+    color: rgb(233, 229, 229);
+    border: 1px solid yellow;
+    cursor: pointer;
+    transition: .5s;
+}
+.header-container > button:hover{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* first section start here  */
+
+#first-section{
+    width: 1000px;
+    margin: auto;
+    height: 100vh;
+}
+.wellcome-title{
+    padding:70px 0 ;
+    text-align: center;
+}
+.wellcome-title > h2{
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+.wellcome-title > p{
+    text-align:justify;
+}
+
+.wellcome-box-parent{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 50px;
+}
+.wellcome-box{
+    padding: 20px 10px;
+    width: 300px;
+    transition: .5s;
+}
+.wellcome-box > i{
+    font-size: 30px;
+    color:  rgb(255, 217, 0);
+}
+.wellcome-box > h3{
+    margin: 10px 0;
+}
+.wellcome-box > p{
+    margin-bottom: 20px;
+}
+.wellcome-box:hover{
+    box-shadow: 5px 5px 5px gray,-5px -5px 5px gray;
+}
+
+/* second section start here  */
+
+.destination-title{
+    text-align: center;
+    padding: 30px 0;
+}
+.destination-title > h2{
+    font-size: 35px;
+}
+.destination-title > h5{
+    margin: 10px 0;
+    margin-bottom: 30px;
+}
+.destination-title > input{
+    width: 60px;
+}
+
+.destination-card-parent{
+    width: 1000px;
+    margin: auto;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+}
+.card{
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.img-name{
+   position: absolute;
+   left: 0;
+   top: 0;
+   color: white;
+   width: 100%;
+   height: 100%;
+   display: grid;
+   place-content: center;
+   text-align: center;
+   opacity: 0;
+   transition: .5s;
+}
+.card > img{
+    width: 300px;
+    height: 200px;
+    transition: .5s;
+}
+.card:hover img{
+    transform:scale(1.5);
+}
+.card:hover .img-name{
+    background-color: rgba(0, 0, 0, 0.37);
+    opacity: 1;
+}
+
+/* third section start here  */
+
+.big-img{
+    width: 475px;
+    height: 280px;
+}
+.big-img > img{
+    width: 100%;
+    height: 100%;
+}
+.small-img{
+    width: 225px;
+    height: 150px;
+}
+.blog-title{
+    text-align: center;
+    padding: 20px 0;
+}
+.blog-title > h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.blog-box-parent{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.blog-box1{
+    width: 475px;
+}
+.blog-box1-small-parent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+}
+.blog1-small-parent-text > h3{
+    margin-bottom: 10px;
+}
+.blog-box2{
+    width: 495px;
+}
+.blog-box2-card1 > h3{
+    margin: 10px 0;
+}
+.blog-box2-card1 > p{
+    margin-bottom: 66px;
+}
+.blog-box2-card-parent{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-box2-card1{
+    width: 240px;
+}
+.blog-box2-card2{
+    width: 240px;
+}
+.blog-box2-card2 > .first-s-img{
+    margin-bottom: 20px;
+}
+.blog-box2-card2 > h3{
+    margin-top: 10px;
+    margin-bottom: 5px
+}
+.read-more{
+    text-align: center;
+}
+.read-more a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(226, 226, 23);
+    padding: 10px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-bottom: 15px;
+    transition: .5s;
+    border: 1px solid yellow;
+}
+.read-more a:hover{
+    background-color: rgba(0, 0, 0, 0.068);
+    color: rgb(196, 196, 10);
+}
+
+/* fourth section starts here  */
+
+.opinion-title{
+    text-align: center;
+    padding: 20px 0;
+}
+.opinion-title h2{
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+.main-opinion{
+    width: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.opinion-text > p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.first{
+    color: rgb(214, 214, 12);
+}
+#fifth-section{
+    background-color: orangered;
+    margin: 100px 0;
+    padding: 50px 0;
+}
+.discount-parent{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+}
+.discount-text > h2{
+    color: white;
+}
+.book > a{
+    text-decoration: none;
+    color: white;
+    background-color: inherit;
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: .5s;
+}
+.book > a:hover{
+    background-color: brown;
+}
+
+/* footer section starts here  */
+
+#footer{
+    background-color: rgb(39, 36, 36);
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.box-parent{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+}
+.box{
+    color: white;
+}
+.box > h3{
+    margin-bottom: 10px;
+}
+.box > p{
+    margin-bottom: 5px;
+}
+.box a{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(240, 76, 11);
+}
+.copy{
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
